@@ -12,3 +12,20 @@ The climate data for Hawaii is provided through two CSV files. Start by using Py
 - Inspect the data for NaNs and missing values. You must decide what to do with this data.
 
 - Save your cleaned CSV files with the prefix clean_.
+
+## Step 2 - Database Engineering
+Use SQLAlchemy to model your table schemas and create a sqlite database for your tables. You will need one table for measurements and one for stations.
+
+- Create a Jupyter Notebook called database_engineering.ipynb and use this to complete all of your Database Engineering work.
+
+- Use Pandas to read your cleaned measurements and stations CSV data.
+
+- Use the engine and connection string to create a database called hawaii.sqlite.
+
+- Use declarative_base and create ORM classes for each table.
+
+-   You will need a class for Measurement and for Station.
+
+-   Make sure to define your primary keys.
+
+- Once you have your ORM classes defined, create the tables in the database using create_all.
